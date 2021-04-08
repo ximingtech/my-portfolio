@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: 'black',
+    fontFamily: 'Courier New'
   },
 }));
 
@@ -24,14 +26,14 @@ export default function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor:'black'}}>
+      <AppBar position="static" style={{ backgroundColor:'white'}}>
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            XmTech
+          <Typography variant="h2" className={classes.title}>
+            {'.XMT'}
           </Typography>
-          <Home style={{marginRight:'15px'}} />
-          <BusinessCenter style={{marginRight:'15px'}} />
-          <ContactPhone style={{marginRight:'15px'}} />
+          <Home style={{marginRight:'15px', color: 'black'}} />
+          <BusinessCenter style={{marginRight:'15px', color: 'black'}} />
+          <ContactPhone style={{marginRight:'15px', color: 'black'}} />
         </Toolbar>
       </AppBar>
     </div>
