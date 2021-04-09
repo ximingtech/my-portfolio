@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         height: 48,
         padding: '0 30px',
         boxShadow: '0px 3px 5px 5px rgba(0, 0, 0, .3)',
-      },
+    },
 }));
 
 const theme = createMuiTheme({
@@ -55,7 +55,7 @@ export default function Home () {
                 <div className={classes.title}>
                     <ThemeProvider theme={theme}>
                         <Typography variant="h2">
-                            <strong> {"{Hello World?}"};</strong> 
+                            <strong> {"{Hello World?}"}1.</strong> 
                         </Typography>
                         <Typography variant="subtitle1">
                             I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with 3 years of experience.

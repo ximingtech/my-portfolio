@@ -69,7 +69,7 @@ export default function About(){
     return (
         <section>
         <div className={classes.root}>
-            <Typography variant='h2'><strong>{'{About Me?}'};</strong></Typography>
+            <Typography variant='h2'><strong>{'{About Me?}'}2.</strong></Typography>
             <div>
                 {/* <div className={classes.userIcon} /> */}
                 {/* <Card style={{backgroundColor:'white', marginLeft: '300px', marginRight: '300px', marginTop: '100px'}}>
