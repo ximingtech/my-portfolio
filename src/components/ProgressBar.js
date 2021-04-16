@@ -8,7 +8,7 @@ const ProgressBar = props => {
 
     return (
         <Box display="flex" alignItems="center" >
-            <Box minWidth={80}>
+            <Box minWidth={90}>
                 <Typography variant="caption" color="textSecondary" style={{color:'white'}}>{`${props.label}`}</Typography>
             </Box>
             <Box width="100%" mr={1}>

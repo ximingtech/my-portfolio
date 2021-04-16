@@ -52,7 +52,7 @@ export default function Experience() {
             <div className={classes.root}>
                 <Grid container className={classes.testLayout}>
                     <Grid item xs={12}>
-                        <Typography variant='h3' >{'{Resume?}'}4.</Typography>
+                        <Typography variant='h3' >{'{Resume?}'}3.</Typography>
                     </Grid>
                     <Grid item xs={12} lg={6} style={{marginTop:'2%', marginBottom:'4%'}} >
                     <Typography align='center'><strong>Experience</strong></Typography>

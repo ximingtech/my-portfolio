@@ -7,7 +7,7 @@ import AppBar from '../components/Appbar';
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'relative',
-        height: '89vh',
+        height: '90vh',
         backgroundColor: 'white'
     },
     title: {
