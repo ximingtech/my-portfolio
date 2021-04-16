@@ -26,14 +26,14 @@ export default function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor:'black'}}>
+      <AppBar position="static" color='transparent'>
         <Toolbar>
-          <Typography variant="h2" className={classes.title} style={{color: 'white'}}>
+          <Typography variant="h2" className={classes.title} style={{color: 'black'}}>
             {'.XMT'}
           </Typography>
-          <Home style={{marginRight:'15px', color: 'white'}} />
-          <BusinessCenter style={{marginRight:'15px', color: 'white'}} />
-          <ContactPhone style={{marginRight:'15px', color: 'white'}} />
+          <Home style={{marginRight:'15px', color: 'black'}} />
+          <BusinessCenter style={{marginRight:'15px', color: 'black'}} />
+          <ContactPhone style={{marginRight:'15px', color: 'black'}} />
         </Toolbar>
       </AppBar>
     </div>

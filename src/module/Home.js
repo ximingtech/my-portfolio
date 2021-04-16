@@ -7,7 +7,7 @@ import AppBar from '../components/Appbar';
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'relative',
-        height: '100vh',
+        height: '89vh',
         backgroundColor: 'white'
     },
     title: {
@@ -41,7 +41,14 @@ const theme = createMuiTheme({
       },
       body1 :{
         fontFamily:'Courier New',
-      }
+      },
+      h6:{
+        fontFamily:'Courier New',
+        fontStyle: 'Bold',     
+      },
+      h3: {
+        fontFamily:'Courier New',
+      },
     },
 });
 
@@ -51,14 +58,14 @@ export default function Home () {
     return (
         <section id='home'>
             <div className={classes.root}>
-                <AppBar />
+                {/* <AppBar /> */}
                 <div className={classes.title}>
                     <ThemeProvider theme={theme}>
                         <Typography variant="h2">
                             <strong> {"{Hello World?}"}1.</strong> 
                         </Typography>
                         <Typography variant="subtitle1">
-                            I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with 3 years of experience.
+                            {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with 3 years of experience.{"</p>"}
                         </Typography>
                         <Typography variant="caption">
                             {'<p hidden> more on'} <strong>Backend</strong> {'actually 😂😆 </p>'} 

@@ -7,12 +7,12 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'relative',
-        height: '100vh',
-        backgroundColor: 'white'
+        //height: '100vh',
+        //backgroundColor: 'red'
     },
     progressRoot:{
         width: '100%',
-        marginTop: '0.5%'
+        marginTop: '0.5%',
     },
     skillDisplay:{
         display: 'flex',
@@ -38,6 +38,11 @@ const useStyles = makeStyles((theme) => ({
         padding: '0 30px',
         boxShadow: '0px 3px 5px 5px rgba(0, 0, 0, .3)',
     },
+    testLayout:{
+        backgroundColor: 'black',
+        color:'white',
+        paddingBottom:'4%',
+    }
 }));
 
 export default function Skill() {
@@ -46,10 +51,10 @@ export default function Skill() {
     return(
         <section>
             <div className={classes.root}>
-                <Grid container>
-                    <Grid item xs={12}> 
-                        <Typography variant='h2'><strong>{'{Tech Stack?}'}3.</strong></Typography>
-                    </Grid>
+                <Grid container className={classes.testLayout} >
+                    {/* <Grid item xs={12} > 
+                        <Typography variant='h3'>{'{Tech Stack}'}3.</Typography>
+                    </Grid> */}
                     <Grid item xs={12}>
                         <Grid container style={{marginTop:'2%'}}>
                             <Grid item xs={12} lg={3}>
@@ -59,10 +64,13 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>Programming Language</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={50} label={'Node.js'}></ProgressBar>
-                                            <ProgressBar value={70} label={'React.js'}></ProgressBar>
-                                            <ProgressBar value={90} label={'MySQL'}></ProgressBar>
-                                            <ProgressBar value={70} label={'Express.js'}></ProgressBar>
+                                            <ProgressBar value={50} label={'Java'}></ProgressBar>
+                                            <ProgressBar value={80} label={'JavaScript'}></ProgressBar>
+                                            <ProgressBar value={80} label={'C#'}></ProgressBar>
+                                            <ProgressBar value={90} label={'VB.Net'}></ProgressBar>
+                                            <ProgressBar value={85} label={'SQL'}></ProgressBar>
+                                            <ProgressBar value={70} label={'CSS3'}></ProgressBar>
+                                            <ProgressBar value={70} label={'HTML5'}></ProgressBar>
                                         </div>
                                     </div>
                                 </div>
@@ -74,9 +82,9 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>Database</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'JavaScript'}></ProgressBar>
-                                            <ProgressBar value={60} label={'C#'}></ProgressBar>
-                                            <ProgressBar value={90} label={'VBA'}></ProgressBar>
+                                            <ProgressBar value={80} label={'MySQL'}></ProgressBar>
+                                            <ProgressBar value={70} label={'MSSQL'}></ProgressBar>
+                                
  
                                         </div>
                                     </div>
@@ -89,13 +97,14 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>Framework & Libraries</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'JavaScript'}></ProgressBar>
-                                            <ProgressBar value={60} label={'C#'}></ProgressBar>
-                                            <ProgressBar value={90} label={'VBA'}></ProgressBar>
-                                            <ProgressBar value={50} label={'Node.js'}></ProgressBar>
-                                            <ProgressBar value={70} label={'React.js'}></ProgressBar>
-                                            <ProgressBar value={90} label={'MySQL'}></ProgressBar>
+                                            <ProgressBar value={80} label={'JQuery '}></ProgressBar>
+                                            <ProgressBar value={80} label={'.Net'}></ProgressBar>
+                                            <ProgressBar value={80} label={'React.js'}></ProgressBar>
+                                            <ProgressBar value={60} label={'Next.js'}></ProgressBar>
                                             <ProgressBar value={70} label={'Express.js'}></ProgressBar>
+                                            <ProgressBar value={70} label={'Node.js'}></ProgressBar>
+                                            <ProgressBar value={90} label={'Bootstrap'}></ProgressBar>
+                                            <ProgressBar value={80} label={'Material UI'}></ProgressBar>
                                         </div>
                                     </div>
                                 </div>
@@ -107,10 +116,10 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>OS Platform</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'Windows'}></ProgressBar>
-                                            <ProgressBar value={60} label={'MacOS'}></ProgressBar>
-                                            <ProgressBar value={60} label={'Android'}></ProgressBar>
-                                            <ProgressBar value={60} label={'IOS'}></ProgressBar>
+                                            <ProgressBar value={90} label={'Windows'}></ProgressBar>
+                                            <ProgressBar value={80} label={'MacOS'}></ProgressBar>
+                                            <ProgressBar value={80} label={'Android'}></ProgressBar>
+                                            <ProgressBar value={85} label={'IOS'}></ProgressBar>
                                         </div>
                                     </div>
                                 </div>
@@ -126,10 +135,10 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>IDE</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'JavaScript'}></ProgressBar>
-                                            <ProgressBar value={60} label={'C#'}></ProgressBar>
-                                            <ProgressBar value={90} label={'VBA'}></ProgressBar>
-                                            <ProgressBar value={50} label={'Node.js'}></ProgressBar>
+                                            <ProgressBar value={80} label={'VS Code'}></ProgressBar>
+                                            <ProgressBar value={85} label={'VS 2019'}></ProgressBar>
+                                            <ProgressBar value={70} label={'Android Studio'}></ProgressBar>
+                                          
                      
                                         </div>
                                     </div>
@@ -142,13 +151,22 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>Interested</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'JavaScript'}></ProgressBar>
-                                            <ProgressBar value={60} label={'C#'}></ProgressBar>
-                                            <ProgressBar value={90} label={'VBA'}></ProgressBar>
-                                            <ProgressBar value={50} label={'Node.js'}></ProgressBar>
-                                            <ProgressBar value={70} label={'React.js'}></ProgressBar>
-                                            <ProgressBar value={90} label={'MySQL'}></ProgressBar>
-                                            <ProgressBar value={70} label={'Express.js'}></ProgressBar>
+                                            <ProgressBar value={80} label={'.Net Core'}></ProgressBar>
+                                            <ProgressBar value={90} label={'Flutter'}></ProgressBar>
+                                            <ProgressBar value={90} label={'Go'}></ProgressBar>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12} lg={3}>
+                                <div className={classes.displaySet}>
+                                    <div className={classes.skillDisplay}>
+                                        <Typography variant="caption">
+                                            <span className={classes.nameStyle}>Other Fields</span>
+                                        </Typography>
+                                        <div className={classes.progressRoot}>
+                                            <ProgressBar value={80} label={'Singing'}></ProgressBar>
+                                                             
                                         </div>
                                     </div>
                                 </div>
@@ -160,9 +178,9 @@ export default function Skill() {
                                             <span className={classes.nameStyle}>Language I Speak</span>
                                         </Typography>
                                         <div className={classes.progressRoot}>
-                                            <ProgressBar value={80} label={'Mandarin'}></ProgressBar>
+                                            <ProgressBar value={99} label={'Mandarin'}></ProgressBar>
                                             <ProgressBar value={60} label={'English'}></ProgressBar>
-                                            <ProgressBar value={90} label={'Bahasa Malayu'}></ProgressBar>
+                                            <ProgressBar value={50} label={'Bahasa Malayu'}></ProgressBar>
                                         </div>
                                     </div>
                                 </div>

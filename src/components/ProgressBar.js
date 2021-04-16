@@ -7,15 +7,15 @@ import Box from '@material-ui/core/Box';
 const ProgressBar = props => {
 
     return (
-        <Box display="flex" alignItems="center">
+        <Box display="flex" alignItems="center" >
             <Box minWidth={80}>
-                <Typography variant="caption" color="textSecondary">{`${props.label}`}</Typography>
+                <Typography variant="caption" color="textSecondary" style={{color:'white'}}>{`${props.label}`}</Typography>
             </Box>
             <Box width="100%" mr={1}>
                 <LinearProgress variant="determinate" {...props} />
             </Box>
             <Box minWidth={35}>
-                <Typography variant="caption" color="textSecondary">{`${Math.round(
+                <Typography variant="caption" color="textSecondary" style={{color:'white'}}>{`${Math.round(
                 props.value,
                 )}%`}</Typography>
             </Box>
