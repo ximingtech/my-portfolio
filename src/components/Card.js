@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles({
     root: {
@@ -21,35 +20,21 @@ const CardUi = props => {
     return (
         <Card className={classes.root}>
             <CardActionArea>
-                {/* <CardMedia
-                component="img"
-                alt="Contemplative Reptile"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="Contemplative Reptile"
-                /> */}
-                <CardContent>
-                    <div style={{display: 'flex', 
-        flexDirection: 'row', 
-        justifyContent: 'center',
-        padding: '10% 5% 10% 5%',}}>{props.icon}</div>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Box p={2}>
+                    {props.img}
+                </Box>
+                <CardContent>              
+                <Typography gutterBottom variant="h6" component="h2" align="center">
+                <Box fontWeight="bold">
                 {`${props.label}`}
+                </Box>
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                
+                <Typography variant="caption" color="textSecondary" component="p" align="center">
+                 {`${props.contentCard}`}
                 </Typography>
                 </CardContent>
             </CardActionArea>
-            {/* <CardActions>
-                <Button size="small" color="primary">
-                Share
-                </Button>
-                <Button size="small" color="primary">
-                Learn More
-                </Button>
-            </CardActions> */}
         </Card>
       );
 }
@@ -60,6 +45,7 @@ CardUi.propTypes = {
      * Value between 0 and 100.
      */
     label: PropTypes.string,
+    contentCard: PropTypes.string, 
 };
 
 export default CardUi;

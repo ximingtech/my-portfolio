@@ -4,6 +4,10 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import MailIcon from '@material-ui/icons/Mail';
+import LocationIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/PhoneIphone';
+import WorkIcon from '@material-ui/icons/Work'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -94,13 +98,15 @@ export default function Education() {
                                         <Grid container>
                                             <Grid item xs={12} lg={6} style={{marginTop:'5%'}}>
                                                 <Typography variant="h6" align="center">
-                                                   <strong> Address</strong>
+                                                   {/* <strong> Address</strong> */}
+                                                   <LocationIcon/>
                                                 </Typography>
                                                 <Typography variant='subtitle1' align="center">
                                                     Sungai Petani, Kedah
                                                 </Typography>
                                                 <Typography variant="h6" align="center">
-                                                    <strong> Email</strong>
+                                                    {/* <strong> Email</strong> */}
+                                                    <MailIcon />
                                                 </Typography>
                                                 <Typography variant='subtitle1' align="center">
                                                     ximon0827@gmail.com
@@ -108,13 +114,15 @@ export default function Education() {
                                             </Grid>
                                             <Grid item xs={12} lg={6} style={{marginTop:'5%'}}>
                                                 <Typography variant="h6" align="center">
-                                                    <strong>  Phone</strong>
+                                                    {/* <strong>  Phone</strong> */}
+                                                    <PhoneIcon />
                                                 </Typography>
                                                 <Typography variant='subtitle1' align="center">
                                                     +6010-3961090
                                                 </Typography>
                                                 <Typography variant="h6" align="center">
-                                                    <strong>  Freelance</strong>
+                                                    {/* <strong>  Freelance</strong> */}
+                                                    <WorkIcon />
                                                 </Typography>
                                                 <Typography variant='subtitle1' align="center">
                                                     Available
@@ -133,7 +141,7 @@ export default function Education() {
                                                     <TextField style={{backgroundColor:'white'}} id="standard-basic" label="Email" fullWidth variant="filled" value={fEmail} onChange={e => setfEmail(e.target.value)} disabled={double}/>
                                                 </Grid>
                                                 <Grid item xs={12} style={{marginLeft:'5%',marginRight:'5%'}}>
-                                                    <TextField style={{backgroundColor:'white'}}  id="standard-basic" label="Title" variant="filled" value={fTitle} fullWidth onChange={e => setfTitle(e.target.value)} disabled={double}/> 
+                                                    <TextField style={{backgroundColor:'white'}}  id="standard-basic" label="Subject" variant="filled" value={fTitle} fullWidth onChange={e => setfTitle(e.target.value)} disabled={double}/> 
                                                 </Grid>
                                                 <Grid item xs={12} style={{margin:'5%'}}>
                                                     <TextField style={{backgroundColor:'white'}} id="standard-basic" label="Message" value={fMessage} fullWidth multiline rows={3} variant="filled" onChange={e => setfMessage(e.target.value)} disabled={double}/>

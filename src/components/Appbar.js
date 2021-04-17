@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { Home, ContactPhone, BusinessCenter} from '@material-ui/icons'
+import { Home, ContactPhone, BusinessCenter, Person} from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,8 +32,9 @@ export default function MenuAppBar() {
             {'.XMT'}
           </Typography>
           <Home style={{marginRight:'15px', color: 'black'}} />
+          <Person style={{marginRight:'15px', color: 'black'}} />
           <BusinessCenter style={{marginRight:'15px', color: 'black'}} />
-          <ContactPhone style={{marginRight:'15px', color: 'black'}} />
+          <ContactPhone style={{marginRight:'15px', color: 'black'}} />       
         </Toolbar>
       </AppBar>
     </div>
