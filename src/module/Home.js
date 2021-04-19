@@ -10,7 +10,7 @@ import { init } from "ityped";
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'relative',
-        height: '90vh',
+        height: '100vh',
         backgroundColor: 'white'
     },
     title: {

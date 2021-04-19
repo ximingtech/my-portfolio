@@ -5,17 +5,26 @@ import ExperiencePage from './module/Experience';
 import ServicesPage from './module/Services';
 import ContactPage from './module/Contact';
 import AppBar from './components/Appbar';
+
 function App() {
   return (
     <main>
+      <div id="home">
       <AppBar />
       <HomePage />
+      </div>
+      <div id="about">
       <AboutPage />
       <SkillPage />
+      </div>
+      <div id="resume">
       <ExperiencePage />
       <ServicesPage />
+      </div>
+      <div id="contact">
       <ContactPage />
-    </main>
+      </div>
+    </main> 
   );
 }
 
