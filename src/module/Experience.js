@@ -15,6 +15,7 @@ import LogisticIcon from '@material-ui/icons/LocalShipping';
 import Paper from '@material-ui/core/Paper';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Box from '@material-ui/core/Box';
+import Flip from 'react-reveal/Flip';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -56,6 +57,7 @@ export default function Experience() {
                     </Grid>
                     <Grid item xs={12} lg={6} style={{marginTop:'2%', marginBottom:'4%'}} >
                     <Typography align='center'><strong className={classes.nameStyle}>Experience</strong></Typography>
+                        <Flip left>
                         <Timeline align="left">
                             <TimelineItem>
                                 <TimelineOppositeContent style={{flex:0.1}}>
@@ -162,9 +164,11 @@ export default function Experience() {
                                 </TimelineContent>
                             </TimelineItem>
                         </Timeline>
+                        </Flip>
                     </Grid>
                     <Grid item xs={12} lg={6} style={{marginTop:'2%', marginBottom:'4%'}} >
                         <Typography align='center' variant='subtitle1'><strong className={classes.nameStyle}>Education</strong></Typography>
+                        <Flip left>
                         <Timeline align="left">
                             <TimelineItem>
                                 <TimelineOppositeContent style={{flex:0.1}}>
@@ -240,6 +244,7 @@ export default function Experience() {
                                 </TimelineContent>
                             </TimelineItem>
                         </Timeline>
+                        </Flip>
                     </Grid>
                 </Grid>
             </div>

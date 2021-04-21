@@ -9,6 +9,7 @@ import LocationIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/PhoneIphone';
 import WorkIcon from '@material-ui/icons/Work';
 import emailjs from 'emailjs-com';
+import Wobble from 'react-reveal/Wobble';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -112,7 +113,9 @@ export default function Education() {
                             <Grid item xs={12} lg={6} style={{backgroundColor:'black'}}>
                                 <Grid container>
                                     <Grid item xs={12}>
-                                        <Typography variant='h3' align="center">{'{Get In Touch}'}.</Typography>
+                                        <Wobble>
+                                            <Typography variant='h3' align="center">{'{Get In Touch}'}.</Typography>
+                                        </Wobble>
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Grid container>

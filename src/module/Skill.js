@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import ProgressBar from '../components/ProgressBar';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Roll from 'react-reveal/Roll';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,6 +62,7 @@ export default function Skill() {
                     <Grid item xs={12}>
                         <Grid container style={{marginTop:'2%'}}>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -77,8 +79,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -92,8 +96,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -111,8 +117,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -126,12 +134,14 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>  
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container style={{marginTop:'2%'}}>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -146,8 +156,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -160,8 +172,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -173,8 +187,10 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid>
                             <Grid item xs={12} lg={3}>
+                                <Roll>
                                 <div className={classes.displaySet}>
                                     <div className={classes.skillDisplay}>
                                         <Typography variant="caption">
@@ -187,6 +203,7 @@ export default function Skill() {
                                         </div>
                                     </div>
                                 </div>
+                                </Roll>
                             </Grid> 
                         </Grid>
                     </Grid>

@@ -6,7 +6,7 @@ import Mobile from '@material-ui/icons/PhoneAndroid';
 import Code from '@material-ui/icons/Code';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '../components/img/giphy.gif';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Fade, Zoom } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -73,18 +73,24 @@ export default function About(){
                 </Grid>
                 <Grid item xs={12}>
                     <div>
-                        <div className={classes.userIcon} />
+                        <Zoom><div className={classes.userIcon} /></Zoom>
+                        <Fade left>
                         <Typography color="inherit" align="center" variant="h2" marked="center" className={classes.textAround}>
                             Tan Xi Ming
                         </Typography>
+                        </Fade>
+                        <Fade right>
                         <Typography color="inherit" align="center" variant="subtitle1" marked="center" className={classes.textAround}>
                         <Web/> Web | <Mobile/> Mobile | <Code/> Fullstack Developer
                         </Typography>
+                        </Fade>
+                        <Fade left>
                         <Typography align="center" variant="body1"  marked="center" className={classes.textAround}>
                             Hi, I am XMTech, and you can call me Xi Ming. I am a Full Stack Developer with 3 years of experience. 
                                         In my current job at Xend company, my job title is Full Stack Developer and I had developed various of project to help the company 
                                         grow their business and on-time rate over the two years. Now I am very eager to meet the challenge of developing new territories.
                         </Typography>
+                        </Fade>
                     </div>
                 </Grid>
             </Grid>

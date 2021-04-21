@@ -6,6 +6,7 @@ import MIcon from '../components/MIcon';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import { init } from "ityped";
+import { Zoom, Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -80,11 +81,15 @@ export default function Home () {
                         <Typography variant="h2">
                             <strong> {"{"}<span id="myElement"></span>{"}"}</strong> 
                         </Typography>
+                        <Zoom>
                         <Typography variant="subtitle1">
                             {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with 3 years of experience.{"</p>"}
                         </Typography>
+                        </Zoom>
+                        
                         <Typography variant="caption">
-                            {'<p hidden> more on'} <strong>Backend</strong> {'actually 😂😆 </p>'} 
+                        <Zoom><div>{'<p hidden> more on'} <strong>Backend</strong> {'actually 😂😆 </p>'}</div></Zoom>
+                            <Fade>
                             <Box p={1}>
                             <Link href="https://www.linkedin.com/in/xi-ming-tan-3bb9321a4/" target="_blank" rel="noreferrer">
                             <MIcon name="fa fa-linkedin-square" iconStyle={{fontSize:35, marginRight:20, color:'black'}} />
@@ -99,6 +104,7 @@ export default function Home () {
                             <MIcon name="fa fa-github" iconStyle={{fontSize:35, color:'black'}} />
                             </Link>
                             </Box>
+                            </Fade>
                         </Typography>
                     </ThemeProvider>
                 </div>
