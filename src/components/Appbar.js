@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appbarScroll:{
       background:"white",
-      transition:"1s"
+      transition:".5s"
   },
 }));
 

@@ -7,7 +7,8 @@ import Button from '@material-ui/core/Button';
 import MailIcon from '@material-ui/icons/Mail';
 import LocationIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/PhoneIphone';
-import WorkIcon from '@material-ui/icons/Work'
+import WorkIcon from '@material-ui/icons/Work';
+import emailjs from 'emailjs-com';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex', 
         flexDirection: 'row', 
         justifyContent: 'center',
-    }
+    },
 }));
 
 export default function Education() {
@@ -44,10 +45,9 @@ export default function Education() {
 
     const submitValue = () => {
         if(fName===''||fEmail===''||fTitle===''||fMessage===''){
-            alert('All field are mandatory. Please fill up.')
+            alert("Don't like that la, all field are mandatory. Fill up please.")
 
         }else{
-            console.log("yea")
             // if(recap!==null && recap!==''){
             //     setDouble(true);
             //     setChgword('Sending');
@@ -73,6 +73,26 @@ export default function Education() {
             // }else{
             //     alert("Please tick recaptcha checkbox.")
             // }
+
+            setDouble(true);
+            setChgword('Sending');
+
+            const frmdetails = {
+                'Name' : fName,
+                'Email' : fEmail,
+                'Title' : fTitle,
+                'Message' : fMessage
+            }
+
+            emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, frmdetails, process.env.REACT_APP_EMAILJS_USER_KEY)
+            .then((result) => {
+                // alert(result.text);
+                setDouble(false);
+                setChgword('Send')
+                clearValue();
+            }, (error) => {
+                alert(error.text);
+            });
         }
     
 }
@@ -157,11 +177,9 @@ export default function Education() {
                                             </Grid>
                                         </form>
                                     </Grid>
-                                    
                                 </Grid>
                             </Grid>
                         </Grid>
-
                     </Grid>
                 </Grid>
             </div>

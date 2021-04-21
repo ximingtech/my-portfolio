@@ -5,10 +5,11 @@ import ExperiencePage from './module/Experience';
 import ServicesPage from './module/Services';
 import ContactPage from './module/Contact';
 import AppBar from './components/Appbar';
-
+import { ScrollContainer, ScrollPage} from "react-scroll-motion";
 function App() {
   return (
     <main>
+
       <div id="home">
       <AppBar />
       <HomePage />
@@ -24,6 +25,7 @@ function App() {
       <div id="contact">
       <ContactPage />
       </div>
+
     </main> 
   );
 }
