@@ -83,7 +83,7 @@ export default function Home () {
                         </Typography>
                         <Zoom>
                         <Typography variant="subtitle1">
-                            {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with 3 years of experience.{"</p>"}
+                            {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with total 4 years of experience.{"</p>"}
                         </Typography>
                         </Zoom>
                         
