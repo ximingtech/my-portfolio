@@ -91,8 +91,7 @@ export default function Skill() {
                                         <div className={classes.progressRoot}>
                                             <ProgressBar value={80} label={'MySQL'}></ProgressBar>
                                             <ProgressBar value={70} label={'MSSQL'}></ProgressBar>
-                                
- 
+                                            <ProgressBar value={40} label={'Oracle'}></ProgressBar>
                                         </div>
                                     </div>
                                 </div>

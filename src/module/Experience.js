@@ -12,6 +12,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import PrintIcon from '@material-ui/icons/Print';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LogisticIcon from '@material-ui/icons/LocalShipping';
+import BioTechIcon from '@material-ui/icons/LocalHospital'
 import Paper from '@material-ui/core/Paper';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Box from '@material-ui/core/Box';
@@ -59,7 +60,7 @@ export default function Experience() {
                     <Typography align='center'><strong className={classes.nameStyle}>Experience</strong></Typography>
                         <Flip left>
                         <Timeline align="left">
-                            <TimelineItem>
+                        <TimelineItem>
                                 <TimelineOppositeContent style={{flex:0.1}}>
                                     {/* <Typography variant="caption" color="textSecondary" >
                                         Feb 2021 to Present
@@ -74,11 +75,60 @@ export default function Experience() {
                                 <TimelineContent>
                                 <Paper elevation={3} className={classes.paper}>
                                     <Typography variant="subtitle1" component="h1">
-                                    <Box fontWeight="bold" color="secondary.main">Paramit Malaysia SDN BHD <Typography variant='caption'> - Software Engineer </Typography></Box>
+                                    <Box fontWeight="bold" color="secondary.main">Siemens Digital Industries Software <Typography variant='caption'> - Software Engineer </Typography></Box>
                                     </Typography>
                                     <Typography variant='caption'>
-                                        <Box fontWeight="bold" p={1}>Feb 2021 - Present</Box>
+                                        <Box fontWeight="bold" p={1}>Jun 2021 - Present</Box>
                                     </Typography>
+                                    <Grid container spacing={1}>
+                                        <Grid item xs={12}>
+                                            <Typography variant="subtitle1" component="h1"><strong>Full Stack Development</strong></Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                        <Box fontStyle="italic">
+                                            <Typography variant='caption'>• Improve and enhance current semiconduct software.</Typography> <br/>
+                                            <Typography variant='caption'>• Exploring low code platform for development.</Typography> <br/>
+                                            <Typography variant='caption'>• Optimization code performance.</Typography> <br/>
+                                            <Typography variant='caption'>• Work closely with International team on project development.</Typography> <br/>
+                                        </Box>
+                                        </Grid>
+                                    </Grid>
+                                </Paper>
+                                </TimelineContent>
+                            </TimelineItem>
+                            <TimelineItem>
+                                <TimelineOppositeContent style={{flex:0.1}}>
+                                    {/* <Typography variant="caption" color="textSecondary" >
+                                        Feb 2021 to Present
+                                    </Typography> */}
+                                </TimelineOppositeContent>
+                                <TimelineSeparator>
+                                <TimelineDot color="primary">
+                                    <BioTechIcon/>
+                                </TimelineDot>
+                                <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                <Paper elevation={3} className={classes.paper}>
+                                    <Typography variant="subtitle1" component="h1">
+                                    <Box fontWeight="bold" color="primary.main">Paramit Malaysia SDN BHD <Typography variant='caption'> - Software Engineer </Typography></Box>
+                                    </Typography>
+                                    <Typography variant='caption'>
+                                        <Box fontWeight="bold" p={1}>Feb 2021 - Jun 2021</Box>
+                                    </Typography>
+                                    <Grid container spacing={1}>
+                                        <Grid item xs={12}>
+                                            <Typography variant="subtitle1" component="h1"><strong>Full Stack Development</strong></Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                        <Box fontStyle="italic">
+                                            <Typography variant='caption'>• Assisting seniors on MES project.</Typography> <br/>
+                                            <Typography variant='caption'>• Learned how the manufacturing firm operate.</Typography> <br/>
+                                            <Typography variant='caption'>• Create and maintaining reporting for teams.</Typography> <br/>
+                                            <Typography variant='caption'>• Work closely with US team on project development.</Typography> <br/>
+                                        </Box>
+                                        </Grid>
+                                    </Grid>
                                 </Paper>
                                 </TimelineContent>
                             </TimelineItem>
