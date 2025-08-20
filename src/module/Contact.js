@@ -8,7 +8,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import LocationIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/PhoneIphone';
 import WorkIcon from '@material-ui/icons/Work';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Wobble from 'react-reveal/Wobble';
 
 const useStyles = makeStyles((theme) => ({
@@ -85,15 +85,36 @@ export default function Education() {
                 'Message' : fMessage
             }
 
-            emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, frmdetails, process.env.REACT_APP_EMAILJS_USER_KEY)
-            .then((result) => {
-                // alert(result.text);
-                setDouble(false);
-                setChgword('Send')
-                clearValue();
-            }, (error) => {
-                alert(error.text);
-            });
+            // emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, frmdetails, process.env.REACT_APP_EMAILJS_USER_KEY)
+            // .then((result) => {
+            //     // alert(result.text);
+            //     setDouble(false);
+            //     setChgword('Send')
+            //     clearValue();
+            // }, (error) => {
+            //     alert(error.text);
+            // });
+
+            emailjs
+            .send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                frmdetails,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log("✅ Success:", result.text);
+                    alert("Email sent successfully!");
+                    setDouble(false);
+                    setChgword('Send')
+                    clearValue();
+                },
+                (error) => {
+                    console.error("❌ Error:", error.text);
+                    alert("Failed to send email.");
+                }
+            );
         }
     
 }

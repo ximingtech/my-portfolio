@@ -86,10 +86,13 @@ export default function Experience() {
                                         </Grid>
                                         <Grid item xs={12}>
                                         <Box fontStyle="italic">
-                                            <Typography variant='caption'>• Improve and enhance current semiconduct software.</Typography> <br/>
-                                            <Typography variant='caption'>• Exploring low code platform for development.</Typography> <br/>
-                                            <Typography variant='caption'>• Optimization code performance.</Typography> <br/>
-                                            <Typography variant='caption'>• Work closely with International team on project development.</Typography> <br/>
+                                            <Typography variant='caption'>• Involving system design and architecture of large-scale software applications, ensuring scalability, performance, and maintainability across platforms.</Typography> <br/>
+                                            <Typography variant='caption'>• Wrote clean, efficient code for complex features and optimized existing software applications for improved performance and reduced latency.</Typography> <br/>
+                                            <Typography variant='caption'>• Conducted thorough code reviews, providing guidance and mentorship to junior developers, ensuring adherence to coding standards and best practices.</Typography> <br/>
+                                            <Typography variant='caption'>• Took ownership of troubleshooting complex technical issues, leading to quick resolution.</Typography> <br/>
+                                            <Typography variant='caption'>• Conducted unit and integration tests, integrated security measures, and ensured that the software met the highest standards of reliability and security.</Typography> <br/>
+                                            <Typography variant='caption'>• Work closely with the global team on project development to define system requirement, priorities and deliver high quality software on time.</Typography> <br/>
+                                            <Typography variant='caption'>• Evaluated new technologies, tools, and frameworks to drive innovation and improve development productivity.</Typography> <br/>
                                         </Box>
                                         </Grid>
                                     </Grid>

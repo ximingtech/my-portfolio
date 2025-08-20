@@ -86,9 +86,9 @@ export default function About(){
                         </Fade>
                         <Fade left>
                         <Typography align="center" variant="body1"  marked="center" className={classes.textAround}>
-                            Hi, I am XMTech, and you can call me Xi Ming. I am a Full Stack Developer with total 4 years of experience. 
+                            Hi, I am XMTech, and you can call me Xi Ming. I am a Full Stack Developer with total 7 years of experience. 
                                         In my current job at Siemens Digital Industries Software Company, my job title is Full Stack Developer and I had developed various of project to help the company 
-                                        grow their business over the one years. Now I am eager to meet the challenge of developing new territories.
+                                        grow their business over the years. Now I am eager to meet the challenge of developing new territories.
                         </Typography>
                         </Fade>
                     </div>

@@ -83,12 +83,12 @@ export default function Home () {
                         </Typography>
                         <Zoom>
                         <Typography variant="subtitle1">
-                            {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with total 4 years of experience.{"</p>"}
+                            {"<p>"} I Am <span className={classes.nameStyle}>{"{XMTech}"}</span>, Nice to meet you 👋. <strong>Full Stack Developer</strong> with total 7 years of experience.{"</p>"}
                         </Typography>
                         </Zoom>
                         
                         <Typography variant="caption">
-                        <Zoom><div>{'<p hidden> more on'} <strong>Backend</strong> {'actually 😂😆 </p>'}</div></Zoom>
+                        <Zoom><div>{'<p hidden>interested more on'} <strong>Backend</strong> {'actually 😂😆 </p>'}</div></Zoom>
                             <Fade>
                             <Box p={1}>
                             <Link href="https://www.linkedin.com/in/xi-ming-tan-3bb9321a4/" target="_blank" rel="noreferrer">
